@@ -76,7 +76,7 @@ MSP430-Robot-Control-System
 │   ├── lnk_msp430fr2355.cmd                 # Linker command file
 │   ├── Debug/                               # Compilation artifacts
 │   └── targetConfigs/                       # MCU target configuration files
-├── firmware/
+├── documents/
 │   └── presentation.pdf                       # Final presentation of the project (in Catalan)
 └── README.md
 ```
