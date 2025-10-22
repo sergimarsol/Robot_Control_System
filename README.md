@@ -47,22 +47,38 @@ The firmware was implemented with a modular structure to maximize maintainabilit
 ```
 MSP430-Robot-Control-System
 ├── hardware/
-│   ├── schematics.pdf
-│   └── layout.pcb
+│   ├── SergiMarsol_Gerber/                  # Gerber manufacturing outputs
+│   ├── SergiMarsol_projecte_MISE.kicad_pro  # KiCad project file
+│   ├── SergiMarsol_projecte_MISE.kicad_sch  # Schematic design
+│   ├── SergiMarsol_projecte_MISE.kicad_pcb  # PCB layout
+│   ├── SergiMarsol_projecte_MISE-backups/   # KiCad auto-backups
+│   ├── SergiMarsol_projecte_MISE.kicad_prl  # KiCad project local settings
+│   ├── fp-info-cache                        # Footprint cache
+│   └── fp-lib-table                         # Footprint library table
 ├── firmware/
-│   ├── main.c
-│   ├── lcd.h
+│   ├── ADC.c
+│   ├── ADC.h
+│   ├── i2c.c
 │   ├── i2c.h
-│   ├── motors.h
+│   ├── joystick.c
 │   ├── joystick.h
-│   ├── adc.h
+│   ├── lcd.c
+│   ├── lcd.h
+│   ├── leds.c
+│   ├── leds.h
+│   ├── motors.c
+│   ├── motors.h
+│   ├── sensors.c
 │   ├── sensors.h
-│   └── timer.h
-├── docs/
-│   ├── diagrams/
-│   └── SergiMarsol_projecte_MISE.pptx
+│   ├── timer.c
+│   ├── timer.h
+│   ├── main.c
+│   ├── lnk_msp430fr2355.cmd                 # Linker command file
+│   ├── Debug/                               # Compilation artifacts
+│   └── targetConfigs/                       # MCU target configuration files
 └── README.md
 ```
+
 
 ## Development Highlights
 
